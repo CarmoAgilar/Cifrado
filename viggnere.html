@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/viggenere.js"></script>
+    <title>Cifrados</title>
+</head>
+
+<body background="css/Fondo.png">
+    <div class="contenedora"></div>
+    <div class="div_inicio">
+    <table>
+            <tr>
+                <p>Escriba el texto</p>
+                <td colspan="2"><textarea class="textarea" id="text" cols="50" rows="10"
+                        style="width:45em; height:20em"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="key">Escriba la llave</label></td>
+                <td><input class="input_text" type="text" value="" id="key" style="width:10em" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button class="boton" onclick="app.doCrypt(false);">Encriptar</button>
+                    <button class="boton" onclick="app.doCrypt(true);">Desencriptar</button>
+                </td>
+            </tr>
+    </table>
+ 
+    <a class="boton" href="index.html">Volver</a>
+    <footer><p>Diego Carmona Aguilar</p><p>5IV8</p></footer>
+</div>
+
+    
+</body>
+
+</html>

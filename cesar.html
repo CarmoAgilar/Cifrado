@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="JS/cesar.js"></script>
+    <title>Cifrados</title>
+</head>
+
+<body background="css/Fondo.png">
+    <div class="contenedora"></div>
+    <div class="div_inicio">
+    <form action="#" method="get" onsubmit="return false;">
+        <p>Escriba el texto</p>
+        <p> <textarea class="textarea" id="target" cols="50" rows="10"
+                style="width:40em; height:15em"></textarea></p>
+        <div style="margin-bottom: 12px; margin-top: 12px">
+
+            <input class="input_text" id="shift" type="number" default="1" max="26" min="1">
+        </div>
+        <div>
+            <button class="boton" onclick="app.doCrypt(false);">Encriptar</button>
+            <button class="boton" onclick="app.doCrypt(true);">Desencriptar</button>
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a class="boton" href="index.html">Volver</a>
+    </div>
+    <footer><p>Diego Carmona Aguilar</p><p>5IV8</p></footer>
+</body>
